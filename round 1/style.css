@@ -1,0 +1,137 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 0;
+  margin: auto;
+}
+
+.team-name {
+  font-size: larger;
+  font-weight: 900;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* align-content: stretch; */
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+  background: linear-gradient(to right, #080321, #121a4b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.round-btn {
+  font-size: 100%;
+  font-weight: 700;
+  border-style: solid;
+  cursor: pointer;
+  height: 3rem;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background-color: rgb(10, 81, 190);
+  color: white;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-btn:hover {
+  background-color: rgb(61, 89, 146);
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: black;
+  text-align: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

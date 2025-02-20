@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Code Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../images/logo/clublogo.png"
+        alt="logo"
+        class="logo"
+        style="width: 100px"
+      />
+      <img
+        src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7618000f4d8454c4/view?project=6756a8dc000c0d24754b&mode=admin"
+        alt="logo"
+        class="logo"
+        style="width: 70px"
+      />
+    </header>
+    <div id="teamNameDisplay" class="team-name">Loading Team...</div>
+    <section id="home">
+      <!-- Video Section -->
+      <div class="video-container">
+        <video controls loop autoplay>
+          <source src="CODE.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Button + Form Section -->
+      <div class="controls">
+        <!-- Morse Code Chart Button -->
+        <button  class="round-btn" onclick="showPopup()">
+          Morse Code Chart
+        </button>
+
+        <br />
+        <br />
+        <input
+          type="text"
+          name="codeInput"
+          id="codeInput"
+          placeholder="Enter Code Name"
+          required
+        />
+        <button id="submitBTN" type="submit" class="round-btn">Submit</button>
+      </div>
+    </section>
+
+    <!-- Popup for Morse Code Chart -->
+    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    <div class="popup" id="popup">
+      <h3>Morse Code Chart</h3>
+      <img
+        src="../images/image.png"
+        alt="Morse Code Chart"
+        style="width: 100%"
+      />
+      <button onclick="hidePopup()" class="round-btn">Close</button>
+    </div>
+  </body>
+</html>

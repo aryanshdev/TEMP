@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks | Round 1 | iOS Unlocked</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/logo/icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      x-data="
+	{
+	  navbarOpen: false,
+	  dropdownOpen: false
+	}
+  "
+    >
+      <div class="w-[100%]" style="padding: 10px; width: 125px">
+        <img
+          src="../images/logo/clublogo.png"
+          alt="logo"
+          class="logo"
+          height="40px"
+        />
+      </div>
+      <img
+        src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7618000f4d8454c4/view?project=6756a8dc000c0d24754b&mode=admin"
+        alt="logo"
+        class="logo"
+        style="width: 70px"
+      />
+    </header>
+    <section>
+      <section
+        style="
+          display: flex;
+          height: 80vh;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="display: grid; place-items: center">
+          <span id="team-name"> <h1>Thank You For Playing</h1></span>
+
+          <button
+            class="round-btn"
+            id="s-btn"
+            onclick="javascript:window.location.replace('https://gameflix3-leaderboard.onrender.com/')"
+          >
+            View Leaderboard
+          </button>
+        </div>
+      </section>
+      <div class="background-image-svg">
+        <img
+          src="../Common/images/shapes/hero-shape-2.svg"
+          alt=""
+          class="sec-bg-img2"
+        />
+      </div>
+    </section>
+    <script>
+      let button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        window.location.replace(
+          "https://gameflix3-leaderboard.onrender.com/"
+        );
+      });
+    </script>
+  </body>
+</html>
